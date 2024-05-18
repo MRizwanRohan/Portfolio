@@ -158,18 +158,27 @@ header .navbar ul li a {
     color: var(--text-color);
     font-size: 2rem;
     border-radius: 5rem;
-    transition: background .3s ease-in-out, transform .3s ease-in-out;
+    transition: background .3s ease-in-out, transform .3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 header .navbar ul li a:hover {
     background: var(--yellow);
     transform: scale(1.05);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+header .navbar ul li a.active {
+    background: var(--btn-hover-bg);
+    color: var(--primary-bg);
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 #menu {
     position: fixed;
     top: 2rem; right: 2rem;
-    background: #241f1f;
+    background: var(--btn-bg);
     color: var(--text-color);
     cursor: pointer;
     font-size: 2.5rem;
@@ -177,6 +186,14 @@ header .navbar ul li a:hover {
     z-index: 1000;
     display: none;
     border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#menu:hover {
+    background: var(--btn-hover-bg);
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .home {
@@ -492,3 +509,4 @@ header .navbar ul li a:hover {
         margin: 3rem 0;
     }
 }
+
