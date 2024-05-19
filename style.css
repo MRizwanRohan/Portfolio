@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root {
-    --yellow: #f9ca24;
-    --primary-bg: #100d46;
-    --secondary-bg: #1e3c72;
+    --yellow: #f6fa00;
+    --primary-bg: #19155e;
+    --secondary-bg: #f1f2f3;
     --accent-bg: #2a5298;
     --text-color: #ffffff;
-    --secondary-text: #eee;
-    --btn-bg: #585353;
+    --secondary-text: #ffffff;
+    --btn-bg: #141414;
     --btn-hover-bg: var(--yellow);
 }
 
 /* Add your background image here */
 body::before {
     content: '';
-    /*background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;*/
+    /* background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover; */
     background: url('images/bg.webp') no-repeat center center/cover;
     position: fixed;
     top: 0;
@@ -22,6 +22,7 @@ body::before {
     width: 100%;
     height: 100%;
     z-index: -1;
+    filter: blur(10px);
 }
 
 * {
@@ -57,7 +58,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: rgba(16, 13, 70, 0.9); /* Add transparency to see the background image */
+    background: rgba(57, 54, 121, 0.9); /* Add transparency to see the background image */
     overflow-x: hidden;
     padding-left: 35rem;
     color: var(--text-color);
@@ -155,7 +156,7 @@ header .navbar ul li a {
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: #182a52;
+    background: #09245f;
     color: var(--text-color);
     font-size: 2rem;
     border-radius: 5rem;
